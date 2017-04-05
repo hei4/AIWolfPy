@@ -26,6 +26,7 @@ class TestAgent(object):
                 if SEER not in self.divineMap.keys():
                     self.divineMap[SEER] = dict()
                 self.divineMap[SEER][talk['text'].split()[1]] = talk['text'].split()[2]
+        
         if "statusMap" in game_info.keys():
             self.statusMap = game_info["statusMap"]
         
